@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,77 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T Gnaneswari - Resume</title>
     <style>
+        /* Base Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f8;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            background-color: #fff;
-            padding: 25px 40px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
             color: #333;
         }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            font-weight: 600;
+            color: #222;
+        }
+
         h1 {
             text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 5px;
         }
+
+        h2 {
+            font-size: 1.5em;
+            color: #1a73e8;
+            margin-bottom: 15px;
+        }
+
         hr {
             border: 0;
-            border-top: 1px solid #ccc;
-            margin: 10px 0 20px;
+            border-top: 2px solid #e0e0e0;
+            margin: 20px 0;
         }
-        .section {
-            margin-bottom: 20px;
+
+        p, li {
+            font-size: 1em;
+            line-height: 1.6;
         }
+
         ul {
             list-style-type: none;
             padding-left: 0;
         }
+
         a {
             color: #1a73e8;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
         .skills span {
             display: inline-block;
-            background-color: #e0e0e0;
-            padding: 5px 10px;
+            background-color: #e3f2fd;
+            color: #1a73e8;
+            padding: 6px 12px;
             margin: 5px 5px 0 0;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Projects & Achievements */
+        .projects li, .achievements li {
+            margin-bottom: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>T Gnaneswari</h1>
-        <p style="text-align:center;">Nagari | tgnaneswari2004@gmail.com | [Your Phone Number]</p>
+        <p class="contact-info">Nagari | tgnaneswari2004@gmail.com | [Your Phone Number]</p>
         <hr>
 
         <div class="section">
             <h2>Career Objective</h2>
-            <p>To secure a position in a reputed organization where I can use my skills and knowledge to contribute to growth while improving my career prospects.</p>
+            <p>Seeking a challenging position in a reputable organization where I can leverage my technical skills and academic knowledge to contribute to organizational growth while further developing my professional career.</p>
         </div>
 
         <div class="section">
             <h2>Education</h2>
             <ul>
-                <li>MCA - Siddharth Institute of Engineering & Technology, 2026 - CGPA: 9.45</li>
-                <li>B.Sc - Sri Surya Degree College, Nagari, 2024 - CGPA: 9.10</li>
-                <li>Intermediate (MPC) - Dr. M.S.M.N. Govt. Junior College, Nagari, 2021 - 90.8%</li>
-                <li>10th - SGN ZP Girls High School, Nagari, 2019 - CGPA: 9.2</li>
+                <li><strong>MCA</strong> - Siddharth Institute of Engineering & Technology, 2026 | CGPA: 9.45</li>
+                <li><strong>B.Sc</strong> - Sri Surya Degree College, Nagari, 2024 | CGPA: 9.10</li>
+                <li><strong>Intermediate (MPC)</strong> - Dr. M.S.M.N. Govt. Junior College, Nagari, 2021 | 90.8%</li>
+                <li><strong>10th</strong> - SGN ZP Girls High School, Nagari, 2019 | CGPA: 9.2</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="skills">
                 <span>Java</span>
                 <span>Python</span>
@@ -88,15 +144,15 @@
 
         <div class="section">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Academic Marks Automation System</strong> - Java-based web app to automate student marks entry, tracking, and reporting.</li>
-                <li><strong>Banking Transaction System</strong> - Java program to execute Deposit, Withdraw, Mini Statement.</li>
+            <ul class="projects">
+                <li><strong>Academic Marks Automation System:</strong> Developed a Java-based web application to automate student marks entry, tracking, and reporting efficiently.</li>
+                <li><strong>Banking Transaction System:</strong> Created a Java program to manage Deposit, Withdraw, and Mini Statement functionalities for bank accounts.</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Achievements & Certifications</h2>
-            <ul>
+            <ul class="achievements">
                 <li>Certificate of Excellence - 1st Semester, First Rank</li>
                 <li><a href="https://www.hackerrank.com/certificates/ac276d8177ab" target="_blank">Java (Basic) - HackerRank</a></li>
                 <li><a href="https://www.hackerrank.com/certificates/e2be14414217" target="_blank">SQL (Basic) - HackerRank</a></li>
@@ -104,4 +160,4 @@
         </div>
     </div>
 </body>
-</htm>
+</html>
